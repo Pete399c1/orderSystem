@@ -9,7 +9,7 @@ import java.util.List;
 public class CustomerDao  {
     private EntityManagerFactory emf;
 
-    public Customer create(Customer customer) {
+    public Customer createCustomer(Customer customer) {
         try(EntityManager em = emf.createEntityManager()){
             em.getTransaction().begin();
             em.persist(customer);
