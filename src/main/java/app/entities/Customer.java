@@ -23,10 +23,10 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     @Builder.Default
-    private Set<Order> orders = new HashSet<>();
+    private Set<Orders> orders = new HashSet<>();
 
 
-    public void addOrder(Order order){
+    public void addOrder(Orders order){
         this.orders.add(order);
         if(order != null){
             order.setCustomer(this);

@@ -21,7 +21,7 @@ public class OrderLine {
     @ManyToOne
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    private Order order;
+    private Orders order;
 
     @ManyToOne
     @ToString.Exclude
